@@ -1,0 +1,86 @@
+.hero::before {
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    display: flex;
+    background-image: url(../../../../public/images/hero-bg1.jpg);
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-size: cover;
+    background-position: center;
+}
+
+.left {
+    flex: 1;
+    z-index: 1;
+    height: calc(100vh - 4rem);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+}
+
+.heading {
+    font-size: 3.5rem;
+    color: rgb(248, 239, 223);
+}
+
+.color {
+    color: #ff613ef7;
+}
+
+.para {
+    line-height: 1.4;
+    font-size: 19px;
+    color: #fcfff1;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fcfff1;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+}
+
+.btn-first {
+    background-color: #ff613ef7;
+}
+
+.btn-second {
+    border: 1px solid #ff613ef7;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+        border: none;
+        background-color: #fbded7f7;
+        color: #ff613ef7;
+    }
+}
+
+.right {
+    flex: 1;
+}
+
+@media (max-width: 789px) {
+    .left {
+        flex: 1;
+    }
+
+    .right{flex:0}
+}

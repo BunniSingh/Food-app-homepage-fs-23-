@@ -1,0 +1,40 @@
+.cards{
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ gap: 1.5rem;
+ padding: 2rem;
+}
+
+
+.card{
+    max-width: 350px;
+    padding: 1rem;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #00000059;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+.profile-info img{
+    width: 60px;
+    border-radius: 50%;
+}
+.profile{
+    font-size: 14px;
+    color: rgb(116, 116, 116);
+    margin-top: 5px;
+}
+@media (max-width: 779px){
+  .cards .card{
+        max-width: none;
+        width: 100%;
+        min-width: 250px;
+    }
+}
